@@ -1,27 +1,83 @@
-<section class="hero">
-    <div class="hero-content">
-        <h1>Welcome to The Hair Clinic</h1>
-        <p>Your trusted salon for stylish haircuts and hairstyles</p>
-        <a href="booking.html" class="btn">Book an Appointment</a>
-    </div>
-</section>
+/* Reset some default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-<section class="about">
-    <div class="about-content">
-        <h2>About Us</h2>
-        <p>The Hair Clinic is committed to providing top-quality hair services. Our team of experienced stylists is dedicated to creating stylish and personalized haircuts and hairstyles that enhance your natural beauty. We use the latest techniques and high-quality products to ensure your satisfaction.</p>
-    </div>
-</section>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+}
 
-<section class="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonial">
-        <img src="customer1.jpg" alt="Customer 1">
-        <p>"I had a fantastic experience at The Hair Clinic. The stylist understood exactly what I wanted and delivered an amazing haircut. Highly recommended!"</p>
-        <p>- Emily, satisfied customer</p>
-    </div>
-    <div class="testimonial">
-        <img src="customer2.jpg" alt="Customer 2">
-        <p>"The Hair Clinic is my go-to salon for hair styling. The staff is friendly and professional, and they always make sure I leave with a beautiful hairstyle."</p>
-        <p>- John, loyal customer</p>
-    </div
+/* Style the header */
+header {
+    background: #f4f4f4;
+    color: #555;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style the sections */
+section {
+    margin: 20px 0;
+}
+
+section#home {
+    text-align: center;
+}
+
+section#services .service {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+section#services .service h3 {
+    margin-bottom: 10px;
+}
+
+section#book form {
+    margin-top: 20px;
+}
+
+section#book form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+section#book form input[type="text"],
+section#book form input[type="email"],
+section#book form input[type="tel"],
+section#book form input[type="date"],
+section#book form input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+section#book form input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
