@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Hair Clinic - Booking</title>
+    <!-- Link your CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Your header here, with logo and navigation -->
+    </header>
+    <main>
+        <h1>Book an Appointment</h1>
+        <form action="/submit-booking" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="stylist">Preferred Stylist:</label>
+            <select id="stylist" name="stylist">
+                <option value="stylist1">Stylist 1</option>
+                <option value="stylist2">Stylist 2</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <!-- Add more fields as needed -->
+
+            <input type="submit" value="Book Now">
+        </form>
+    </main>
+    <footer>
+        <!-- Your footer here -->
+    </footer>
+</body>
+</html>
