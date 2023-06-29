@@ -129,7 +129,7 @@ section#book form input[type="submit"] {
 
 [class*="col-"] {
   float: left;
-  padding:15px
+  padding: 15px
 }
 
 .col-1 {width: 8.33%;}
