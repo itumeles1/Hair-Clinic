@@ -170,27 +170,21 @@ section#book form input[type="submit"] {
 }
 
 /* CSS for video background */
-.hero {
+#hero {
   position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
+} 
 
-.hero video {
-  position: relative;
-  top: 0;
-  left: 0;
+.background-video {
+  position: absolute;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   z-index: -1;
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
-  color: hsla(232, 67%, 8%, 0.743); /* Change this to suit your design */
+  text-align: center;
 }
 
 /* Optional: Add some overlay to the video for better text visibility */
