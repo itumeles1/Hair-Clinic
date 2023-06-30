@@ -8,8 +8,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open index2.html",
-            "file": "/Users/nonnie/Downloads/Salon-main/Hair-Clinic/index2.html"
+            "name": "Open index.html",
+            "file": "/Users/nonnie/Downloads/Salon-main/Hair-Clinic/index.html"
         }
     ]
 }
