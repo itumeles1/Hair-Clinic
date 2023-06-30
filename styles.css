@@ -84,15 +84,25 @@ section#home {
   text-align: center;
 }
 
-section#services .service {
-  border: 1 px solid #ccc;
-  padding: 20 px;
-  margin-bottom: 20 px;
+.row {
+  display: flex;
 }
 
-section#services .service h3 {
-  margin-bottom: 10 px;
+.column {
+  flex: 50%;
+  padding: 10px;
 }
+
+.section#service {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+}
+
 
 section#book form {
   margin-top: 20 px;
@@ -174,7 +184,7 @@ section#book form input[type="submit"] {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
+  z-index: -1;
 }
 
 .hero-content {
@@ -209,4 +219,10 @@ section#book form input[type="submit"] {
 .testimonial p:last-child {
   text-align: right;
   font-style: italic;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
