@@ -4,63 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hair Clinic</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <h1>Hair Clinic</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="hero-section">
-        <div class="hero-text">
-            <h1>Welcome to Hair Clinic</h1>
-            <p>Transforming your hair, transforming your life</p>
-            <a href="#" class="btn">Book Now</a>
-        </div>
-    </section>
-
-    <section id="services-section">
-        <h2>Our Services</h2>
-        <div class="services-container">
-            <div class="service">
-                <img src="service1.jpg" alt="Haircut">
-                <h3>Haircut</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="service">
-                <img src="service2.jpg" alt="Coloring">
-                <h3>Coloring</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="service">
-                <img src="service3.jpg" alt="Styling">
-                <h3>Styling</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="gallery-section">
-        <h2>Gallery</h2>
-        <div class="image-carousel">
-            <!-- Image carousel code goes here -->
-        </div>
-    </section>
-
-    <section id="contact-section">
-      <h2>Contact Us</h2>
-      <form>
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea placeholder="Your Message" required></textarea>
-          <input type="submit" value="Send">
-      </form>
-  </section>
-  
+    <main>
+        <section id="home">
+            <h2>Welcome to Hair Clinic</h2>
+            <p>Our expert hair care professionals take the time to understand your unique hair and scalp needs. Indulge in our luxurious hair care treatments that leave you feeling pampered and looking gorgeous. Sink into our comfortable chairs and unwind in our peaceful salon environment. We believe that healthy and beautiful hair can empower you and increase your self-confidence.</p>
+            <button type="button">Book Now</button>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+                <li>Cut & Style</li>
+                <li>Color</li>
+                <li>Treatment</li>
+                <li>Extensions</li>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Our expert hair care professionals will provide you with a personalized consultation that addresses your specific hair needs. We use only the highest quality hair care products to ensure your hair receives the best possible care. Your satisfaction is our top priority, and we strive to exceed your expectations in every visit.</p>
+            <p>Our expert hair care professionals will cut and style your hair to perfection, with a look that suits your unique beauty and style. Transform your look with our premium hair color solutions, and get the perfect color for your hair and skin tone. Refresh and rejuvenate your hair with our expert scalp and hair treatments that leave your hair shiny, soft, and healthy. Get the long and luscious hair you've always wanted with our expert hair extension services.</p>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Address: 123 Main Street, New York, NY 10001</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@hairclinic.com</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+    </main>
+    <footer>
+        <p>© 2023 Hair Clinic. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
