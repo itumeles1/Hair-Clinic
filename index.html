@@ -1,120 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>The Hair Clinic</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Clinic</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header>
-    <nav class="row">
-      <div class="col-6 logo">
-        <img src="logo.png" alt="The Hair Clinic">
-      </div>
-      <ul class="col-6 menu">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#booking">Booking</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#testimonial">Testimonial</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="hero" class="hero">
-    <h2 class="col-12">A cut above the rest</h2>
-    <div class="hero col-3">
-        <video autoplay loop muted id="background-video" class="background-video">
-            <source src="background-video.mp4" type="video/mp4">
-        </video>
-        <div class="hero-content">
-            <h1>Welcome to The Hair Clinic</h1>
-            <p>We specialize in creating stunning hairstyles that match your unique personality.</p>
+    <section id="hero-section">
+        <div class="hero-text">
+            <h1>Welcome to Hair Clinic</h1>
+            <p>Transforming your hair, transforming your life</p>
+            <a href="#" class="btn">Book Now</a>
         </div>
-    </div>
-</section>
-  <section id="services" class="services row">
-    <h2 class="col-12">Services</h2>
-    <div class="Services col-3">
-      <img src="service1.jpg" alt="Haircut">
-      <h3>Haircut</h3>
-      <p>Get a stylish haircut that suits your face shape and enhances your features.</p>
-    </div>
-    <div class="service col-3">
-      <img src="service2.jpg" alt="Hair Styling">
-      <h3>Hair Styling</h3>
-      <p>Experience professional hair styling for special occasions or everyday glam.</p>
-    </div>
-    <div class="service col-3">
-      <img src="service3.jpg" alt="Hair Coloring">
-      <h3>Hair Coloring</h3>
-      <p>Add vibrancy to your hair with our expert hair coloring services.</p>
-    </div>
-    <div class="service col-3">
-      <img src="service4.jpg" alt="Hair Treatments">
-      <h3>Hair Treatments</h3>
-      <p>Revitalize your hair with nourishing treatments for strength and shine.</p>
-    </div>
+    </section>
+
+    <section id="services-section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="service1.jpg" alt="Haircut">
+                <h3>Haircut</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service">
+                <img src="service2.jpg" alt="Coloring">
+                <h3>Coloring</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="service">
+                <img src="service3.jpg" alt="Styling">
+                <h3>Styling</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery-section">
+        <h2>Gallery</h2>
+        <div class="image-carousel">
+            <!-- Image carousel code goes here -->
+        </div>
+    </section>
+
+    <section id="contact-section">
+      <h2>Contact Us</h2>
+      <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <input type="submit" value="Send">
+      </form>
   </section>
-
-  <section id="booking" class="booking row">
-    <h2 class="col-12">Book an Appointment</h2>
-    <form id="booking-form" action="submit_booking.php" method="post" class="col-6">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required>
-      </div>
-      <div class="form-group">
-        <label for="date">Preferred Date:</label>
-        <input type="date" id="date" name="date" required>
-      </div>
-      <div class="form-group">
-        <label for="time">Preferred Time:</label>
-        <input type="time" id="time" name="time" required>
-      </div>
-      <div class="form-group">
-        <input type="submit" value="Book Now">
-      </div>
-    </form>
-  </section>
- 
-  <section id="booking" class="booking row">
-    <h2 class="col-12">Testimonial</h2> 
-  <div class="testimonial">
-    <p>"The Hair Clinic is simply the best! I love their hair coloring services. Always leaves me feeling like a new person."</p>
-    <p>- John Smith</p>
-</div>
-
-<div class="testimonial">
-    <p>"My hair has never felt healthier! The hair treatments at the Hair Clinic are top-notch. Can't recommend them enough."</p>
-    <p>- Laura Brown</p>
-</div>
-
-<div class="testimonial">
-    <p>"The stylists at the Hair Clinic are true artists. They always find a way to bring my vision to life. I wouldn't go anywhere else."</p>
-    <p>- David Johnson</p>
-</div>
-
-<div class="testimonial">
-    <p>"I've been going to the Hair Clinic for years and I've never been disappointed. The service is excellent and the results are always amazing."</p>
-    <p>- Sarah Taylor</p>
-</div>
-
-<div class="testimonial">
-    <p>"I had a wonderful experience getting my hair styled for a wedding. The team at the Hair Clinic made me look stunning. Highly recommended!"</p>
-    <p>- Emily Wilson</p>
-</div>
-
-
-</body>
-</html>
+  

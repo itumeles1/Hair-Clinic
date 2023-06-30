@@ -1,228 +1,110 @@
-/* CSS Reset */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
+/* Step 1: Typography */
 
 body {
-  line-height: 1;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
 }
 
-ol, ul {
-  list-style: none;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* CSS Variables */
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --font-family: Arial, sans-serif;
-  --font-size: 16px;
-  --spacing-small: 8px;
-  --spacing-medium: 16px;
-  --spacing-large: 24px;
-} 
-
-/* Example usage */
 h1 {
-  color: var(--primary-color);
-  font-family: var(--font-family);
-  font-size: 2rem;
-  margin-bottom: var(--spacing-medium);
+  font-size: 32px;
 }
 
-/* Existing Styles */
-/* Style the header */
-header {
-  background: #f4f4f4;
-  color: #555;
-  padding: 10 px;
-  text-align: center;
+h2 {
+  font-size: 28px;
 }
 
-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+h3 {
+  font-size: 24px;
 }
 
-header nav ul li {
-  display: inline;
-  margin-right: 10 px;
+h4 {
+  font-size: 20px;
 }
 
-header nav ul li a {
-  text-decoration: none;
-  color: #333;
+h5 {
+  font-size: 18px;
 }
 
-/* Style the sections */
-section {
-  margin: 20 px 0;
+h6 {
+  font-size: 16px;
 }
 
-section#home {
-  text-align: center;
-}
-
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-  padding: 10px;
-}
-
-.section#service {
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  padding: 20px;
-}
-
-.service h3 {
+p {
   margin-bottom: 10px;
 }
 
-
-section#book form {
-  margin-top: 20 px;
+a {
+  color: #007bff;
+  text-decoration: none;
 }
 
-section#book form label {
-  display: block;
-  margin-bottom: 5 px;
+/* Step 2: Color Scheme Revamp */
+
+body {
+  background-color: #f8f8f8;
 }
 
-section#book form input[type="text"],  
-section#book form input[type="email"],  
-section#book form input[type="tel"],  
-section#book form input[type="date"],  
-section#book form input[type="time"] {
-  width: 100%;  
-  padding: 10 px;  
-  margin-bottom: 10 px;
+header {
+  background-color: #ffffff;
 }
 
-section#book form input[type="submit"] {
-  background: #333;
-  color: #7d1f1f;
-  border: none;
-  padding: 10 px 20 px;
-  cursor: pointer;
+nav {
+  background-color: #ffffff;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+nav ul li a {
+  color: #333333;
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 15px
+.navbar-brand {
+  color: #007bff;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media only screen and (max-width: 600px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
+.navbar-brand:hover {
+  color: #0056b3;
 }
 
-@media only screen and (max-width: 1200px) {
-  /* For tablets: */
-  [class*="col-"] {
-    width: 50%;
-  }
+/* Step 3: Animations */
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-/* CSS for video background */
-.hero {
-  position: sticky;
-  width: 100%;
-  height: 100vh;
-  overflow: visible;
+.fadeIn {
+  animation: fadeIn 1s;
 }
 
-.hero video {
-  position: absolute;
-  top: 1;
-  left: 1;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  z-index: -1;
+@keyframes slideIn {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(0); }
 }
 
-.hero-content {
-  position: absolute;
-  z-index: -1;
-  color: hsla(232, 67%, 8%, 0.743); /* Change this to suit your design */
+.slideIn {
+  animation: slideIn 1s;
 }
 
-/* Optional: Add some overlay to the video for better text visibility */
-.hero::after {
-  content: '';
+/* Step 4: Image Carousel */
+
+.image-carousel {
   position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.image-carousel img {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(88, 84, 84, 0.5); /* Change the last value to adjust the overlay opacity */
-  z-index: 0;
-}
-#testimonials {
-  background-color: #8b8888;
-  color: #d7c8c8;
-  font-family: 'Arial', sans-serif;
-  padding: 20px;
-}
-
-.testimonial {
-  margin: 20px;
-  font-size: 16px;
-}
-
-.testimonial p:last-child {
-  text-align: right;
-  font-style: italic;
-}
-
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
+  object-fit: cover;
+  opacity: 0;
