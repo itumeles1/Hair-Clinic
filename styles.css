@@ -205,8 +205,8 @@ section#book form input[type="submit"] {
   z-index: 0;
 }
 #testimonials {
-  background-color: #8b8888;
-  color: #d7c8c8;
+  background-color: #282722;
+  color: #d6d7c8;
   font-family: 'Arial', sans-serif;
   padding: 20px;
 }
