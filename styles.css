@@ -146,7 +146,7 @@ section#home {
   font-style: italic;
 }
 
-.servics.active {
+.services.active {
   display: block; /* Only display the service with the 'active' class */
 }
 
