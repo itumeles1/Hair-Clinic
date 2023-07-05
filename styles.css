@@ -136,17 +136,17 @@ section#home {
   padding: 20px;
 }
 
-.services h3 {
+.services {
   margin: 20px;
   font-size: 16px;
   display: none; /* Hide all testimonials initially */
 }
-.service p:last-child {
+.services p:last-child {
   text-align: center;
   font-style: italic;
 }
 
-.service.active {
+.services.active {
   display: block;
 }
 
