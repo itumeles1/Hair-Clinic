@@ -150,6 +150,27 @@ section#home {
   display: block; /* Only display the service with the 'active' class */
 }
 
+#testimonials {
+  background-color: #6d601f;
+  color: #c8cdd7;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+.testimonial {
+  margin: 20px;
+  font-size: 16px;
+  display: none; /* Hide all testimonials initially */
+}
+
+.testimonial p:last-child {
+  text-align: center;
+  font-style: italic;
+}
+
+.testimonial.active { /* Only display the testimonial with the 'active' class */
+  display: block;
+}
 section#book form {
   margin-top: 20px;
 }
@@ -200,28 +221,6 @@ section#book form input[type="submit"] {
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
-#testimonials {
-  background-color: #6d601f;
-  color: #c8cdd7;
-  font-family: 'Arial', sans-serif;
-  padding: 20px;
-}
-
-.testimonial {
-  margin: 20px;
-  font-size: 16px;
-  display: none; /* Hide all testimonials initially */
-}
-
-.testimonial p:last-child {
-  text-align: center;
-  font-style: italic;
-}
-
-.testimonial.active { /* Only display the testimonial with the 'active' class */
-  display: block;
-}
 
 .navbar {
   position: sticky;
