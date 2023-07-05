@@ -59,6 +59,29 @@
     </div>
   </section>
 
+  <script>
+    var services = document.querySelectorAll('.service');
+    var currentService = 0;
+    
+    // Function to update the active service
+    function updateService() {
+      // Remove the 'active' class from the current service
+      services[currentService].classList.remove('active');
+    
+      // Move to the next service
+      currentService = (currentService + 1) % services.length;
+    
+      // Add the 'active' class to the new current service
+      services[currentService].classList.add('active');
+    }
+    
+    // Set the first service to be active initially
+    services[currentService].classList.add('active');
+    
+    // Update the active service every 5 seconds
+    setInterval(updateService, 5000);
+    </script>
+    
   <section id="booking" class="booking row">
     <h2 class="col-12">Book an Appointment</h2>
     <form id="booking-form" action="submit_booking.php" method="post" class="col-6">
