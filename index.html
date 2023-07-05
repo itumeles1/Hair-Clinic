@@ -90,30 +90,54 @@
  
   <section id="booking" class="booking row">
     <h2 class="col-12">Testimonial</h2> 
-  <div class="testimonial">
-    <p>"The Hair Clinic is simply the best! I love their hair coloring services. Always leaves me feeling like a new person."</p>
-    <p>- John Smith</p>
-</div>
-
-<div class="testimonial">
-    <p>"My hair has never felt healthier! The hair treatments at the Hair Clinic are top-notch. Can't recommend them enough."</p>
-    <p>- Laura Brown</p>
-</div>
-
-<div class="testimonial">
-    <p>"The stylists at the Hair Clinic are true artists. They always find a way to bring my vision to life. I wouldn't go anywhere else."</p>
-    <p>- David Johnson</p>
-</div>
-
-<div class="testimonial">
-    <p>"I've been going to the Hair Clinic for years and I've never been disappointed. The service is excellent and the results are always amazing."</p>
-    <p>- Sarah Taylor</p>
-</div>
-
-<div class="testimonial">
-    <p>"I had a wonderful experience getting my hair styled for a wedding. The team at the Hair Clinic made me look stunning. Highly recommended!"</p>
-    <p>- Emily Wilson</p>
-</div>
+    <div id="testimonials">
+      <div class="testimonial">
+        <p>"The Hair Clinic is simply the best! I love their hair coloring services. Always leaves me feeling like a new person."</p>
+        <p>- John Smith</p>
+      </div>
+    
+      <div class="testimonial">
+        <p>"My hair has never felt healthier! The hair treatments at the Hair Clinic are top-notch. Can't recommend them enough."</p>
+        <p>- Laura Brown</p>
+      </div>
+    
+      <div class="testimonial">
+        <p>"The stylists at the Hair Clinic are true artists. They always find a way to bring my vision to life. I wouldn't go anywhere else."</p>
+        <p>- David Johnson</p>
+      </div>
+    
+      <div class="testimonial">
+        <p>"I've been going to the Hair Clinic for years and I've never been disappointed. The service is excellent and the results are always amazing."</p>
+        <p>- Sarah Taylor</p>
+      </div>
+    
+      <div class="testimonial">
+        <p>"I had a wonderful experience getting my hair styled for a wedding. The team at the Hair Clinic made me look stunning. Highly recommended!"</p>
+        <p>- Emily Wilson</p>
+      </div>
+    </div>
+    <script>
+      var testimonials = document.querySelectorAll('.testimonial');
+      var currentTestimonial = 0;
+  
+      // Function to update the active testimonial
+      function updateTestimonial() {
+        // Remove the 'active' class from the current testimonial
+        testimonials[currentTestimonial].classList.remove('active');
+  
+        // Move to the next testimonial
+        currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+  
+        // Add the 'active' class to the new current testimonial
+        testimonials[currentTestimonial].classList.add('active');
+      }
+  
+      // Set the first testimonial to be active initially
+      testimonials[currentTestimonial].classList.add('active');
+  
+      // Update the active testimonial every 5 seconds
+      setInterval(updateTestimonial, 5000);
+    </script>
 
 
 </body>

@@ -191,7 +191,7 @@ section#book form input[type="submit"] {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-section#testimonials {
+#testimonials {
   background-color: #282722;
   color: #d6d7c8;
   font-family: 'Arial', sans-serif;
@@ -201,11 +201,16 @@ section#testimonials {
 .testimonial {
   margin: 20px;
   font-size: 16px;
+  display: none; /* Hide all testimonials initially */
 }
 
 .testimonial p:last-child {
   text-align: right;
   font-style: italic;
+}
+
+.testimonial.active { /* Only display the testimonial with the 'active' class */
+  display: block;
 }
 
 .navbar {
