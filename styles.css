@@ -128,25 +128,25 @@ section#home {
   z-index: 0;
 }
 
-#service {
+#services {
   background-color: #6d601f;
   color: #c8cdd7;
   font-family: 'Arial', sans-serif;
   padding: 20px;
 }
 
-.service h3 {
+.services h3 {
   margin: 20px;
   font-size: 16px;
   display: none; /* Hide all services initially */
 }
 
-.service p:last-child {
+.services p:last-child {
   text-align: center;
   font-style: italic;
 }
 
-.service.active {
+.servics.active {
   display: block; /* Only display the service with the 'active' class */
 }
 
