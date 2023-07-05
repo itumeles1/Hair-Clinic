@@ -80,35 +80,6 @@
     // Update the active service every 5 seconds
     setInterval(updateService, 5000);
     </script>
-    
-  <section id="booking" class="booking row">
-    <h2 class="col-12">Book an Appointment</h2>
-    <form id="booking-form" action="submit_booking.php" method="post" class="col-6">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required>
-      </div>
-      <div class="form-group">
-        <label for="date">Preferred Date:</label>
-        <input type="date" id="date" name="date" required>
-      </div>
-      <div class="form-group">
-        <label for="time">Preferred Time:</label>
-        <input type="time" id="time" name="time" required>
-      </div>
-      <div class="form-group">
-        <input type="submit" value="Book Now">
-      </div>
-    </form>
-  </section>
  
   <section id="testimonials" class="testimonials row">
     <h2 class="col-12">Testimonials</h2> 
@@ -160,7 +131,35 @@
       // Update the active testimonial every 5 seconds
       setInterval(updateTestimonial, 5000);
     </script>
-
+    
+    <section id="booking" class="booking row">
+      <h2 class="col-12">Book an Appointment</h2>
+      <form id="booking-form" action="submit_booking.php" method="post" class="col-6">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Preferred Time:</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Book Now">
+        </div>
+      </form>
+    </section>
 
 </body>
 </html>
