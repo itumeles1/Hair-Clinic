@@ -93,6 +93,42 @@ section#home {
   padding: 10px;
 }
 
+
+/* CSS for video background */
+.hero {
+  position: sticky;
+  width: 100%;
+  height: 100vh;
+  overflow: visible;
+}
+
+.hero video {
+  position: absolute;
+  top: 1;
+  left: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: -1;
+}
+
+.hero-content {
+  position: absolute;
+  z-index: -1;
+  color: hsla(232, 67%, 8%, 0.743); /* Change this to suit your design */
+}
+
+/* Optional: Add some overlay to the video for better text visibility */
+.hero::after {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(88, 84, 84, 0.5); /* Change the last value to adjust the overlay opacity */
+  z-index: 0;
+}
 .section#service {
   margin-bottom: 20px;
   border: 1px solid #ccc;
@@ -155,56 +191,7 @@ section#book form input[type="submit"] {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-@media only screen and (max-width: 600px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  /* For tablets: */
-  [class*="col-"] {
-    width: 50%;
-  }
-}
-
-/* CSS for video background */
-.hero {
-  position: sticky;
-  width: 100%;
-  height: 100vh;
-  overflow: visible;
-}
-
-.hero video {
-  position: absolute;
-  top: 1;
-  left: 1;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  z-index: -1;
-}
-
-.hero-content {
-  position: absolute;
-  z-index: -1;
-  color: hsla(232, 67%, 8%, 0.743); /* Change this to suit your design */
-}
-
-/* Optional: Add some overlay to the video for better text visibility */
-.hero::after {
-  content: '';
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(88, 84, 84, 0.5); /* Change the last value to adjust the overlay opacity */
-  z-index: 0;
-}
-#testimonials {
+section#testimonials {
   background-color: #282722;
   color: #d6d7c8;
   font-family: 'Arial', sans-serif;
@@ -225,4 +212,18 @@ section#book form input[type="submit"] {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  /* For tablets: */
+  [class*="col-"] {
+    width: 50%;
+  }
 }
