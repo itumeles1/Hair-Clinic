@@ -129,13 +129,13 @@ section#home {
   background: rgba(88, 84, 84, 0.5); /* Change the last value to adjust the overlay opacity */
   z-index: 0;
 }
-.section#service {
+.section#services {
   margin-bottom: 20px;
   border: 1px solid #ccc;
   padding: 20px;
 }
 
-.service h3 {
+.services h3 {
   margin-bottom: 10px;
 }
 
