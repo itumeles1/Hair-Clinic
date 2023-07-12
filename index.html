@@ -22,21 +22,20 @@
       </ul>
     </nav>
   </header>
-    <body>
-      <div class="hero">
-        <video controls autoplay muted loop>
-          <source src="background-video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+  <div class="hero">
+    <video controls autoplay muted loop>
+      <source src="background-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
     <div class="hero-content">
-            <h1>Welcome to The Hair Clinic</h1>
-            <p>We specialize in creating stunning hairstyles that match your unique personality.</p>
-        </div>
+      <h1>Welcome to The Hair Clinic</h1>
+      <p>We specialize in creating stunning hairstyles that match your unique personality.</p>
     </div>
-</section>
+  </div>
   <section id="services" class="services row">
     <h2 class="col-12">Services</h2>
-    <div class="service col-3">
+    <!-- Add 'active' class to the first service -->
+    <div class="service active col-3">
       <img src="service1.jpg" alt="Haircut">
       <h3>Haircut</h3>
       <p>Get a stylish haircut that suits your face shape and enhances your features.</p>
@@ -61,50 +60,42 @@
   <script>
     var services = document.querySelectorAll('.service');
     var currentService = 0;
-    
+
     // Function to update the active service
     function updateService() {
       // Remove the 'active' class from the current service
       services[currentService].classList.remove('active');
-    
+
       // Move to the next service
       currentService = (currentService + 1) % services.length;
-    
+
       // Add the 'active' class to the new current service
       services[currentService].classList.add('active');
     }
-    
-    // Set the first service to be active initially
-    services[currentService].classList.add('active');
-    
+
     // Update the active service every 5 seconds
     setInterval(updateService, 5000);
-    </script>
-  </div>
-</div>
+  </script>
+
   <section id="testimonials" class="testimonials row">
     <h2 class="col-12">Testimonials</h2> 
     <div id="testimonial-container">
-      <div class="testimonial">
+      <div class="testimonial active">
         <p>"The Hair Clinic is simply the best! I love their hair coloring services. Always leaves me feeling like a new person."</p>
         <p>- John Smith</p>
       </div>
-    
       <div class="testimonial">
         <p>"My hair has never felt healthier! The hair treatments at the Hair Clinic are top-notch. Can't recommend them enough."</p>
         <p>- Laura Brown</p>
       </div>
-    
       <div class="testimonial">
         <p>"The stylists at the Hair Clinic are true artists. They always find a way to bring my vision to life. I wouldn't go anywhere else."</p>
         <p>- David Johnson</p>
       </div>
-    
       <div class="testimonial">
         <p>"I've been going to the Hair Clinic for years and I've never been disappointed. The service is excellent and the results are always amazing."</p>
         <p>- Sarah Taylor</p>
       </div>
-    
       <div class="testimonial">
         <p>"I had a wonderful experience getting my hair styled for a wedding. The team at the Hair Clinic made me look stunning. Highly recommended!"</p>
         <p>- Emily Wilson</p>
@@ -113,56 +104,52 @@
     <script>
       var testimonials = document.querySelectorAll('.testimonial');
       var currentTestimonial = 0;
-  
+
       // Function to update the active testimonial
       function updateTestimonial() {
         // Remove the 'active' class from the current testimonial
         testimonials[currentTestimonial].classList.remove('active');
-  
+
         // Move to the next testimonial
         currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-  
+
         // Add the 'active' class to the new current testimonial
         testimonials[currentTestimonial].classList.add('active');
       }
-  
-      // Set the first testimonial to be active initially
-      testimonials[currentTestimonial].classList.add('active');
-  
+
       // Update the active testimonial every 5 seconds
       setInterval(updateTestimonial, 5000);
     </script>
-    </div>
-  </div>  
-</section>
-    <section id="booking" class="booking row">
-      <h2 class="col-12">Book an Appointment</h2>
-      <form id="booking-form" action="submit_booking.php" method="post" class="col-6">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone:</label>
-          <input type="tel" id="phone" name="phone" required>
-        </div>
-        <div class="form-group">
-          <label for="date">Preferred Date:</label>
-          <input type="date" id="date" name="date" required>
-        </div>
-        <div class="form-group">
-          <label for="time">Preferred Time:</label>
-          <input type="time" id="time" name="time" required>
-        </div>
-        <div class="form-group">
-          <input type="submit" value="Book Now">
-        </div>
-      </form>
-    </section>
-  </div>
-</div>
+  </section>
+
+  <section id="booking" class="booking row">
+    <h2 class="col-12">Book an Appointment</h2>
+    <form id="booking-form" action="submit_booking.php" method="post" class="col-6">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Book Now">
+      </div>
+    </form>
+  </section>
+</body>
+
 </html>
