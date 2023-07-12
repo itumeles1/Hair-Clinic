@@ -135,7 +135,7 @@ section#home {
   padding: 20px;
 }
 
-.service h3 {
+.service {
   margin: 20px;
   font-size: 16px;
   display: none; /* Hide all services initially */
